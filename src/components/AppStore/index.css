@@ -1,1 +1,41 @@
-/* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+}
+
+.main-heading {
+  font-weight: bolder;
+  font-family: Bree Serif;
+  font-size: 48px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 6px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.search-input {
+  height: 32px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-input::placeholder {
+  font-size: 18px;
+}
+
+.search-icon {
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+}

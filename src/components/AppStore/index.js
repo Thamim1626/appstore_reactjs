@@ -293,8 +293,16 @@ const appsList = [
 class AppStore extends Component {
   render() {
     return (
-      <div>
-        <p>AppStore render Successfully</p>
+      <div className="app-container">
+        <h1 className="main-heading">APP STORE</h1>
+        <div className="input-container">
+          <input type="search" className="search-input" placeholder="search" />
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png"
+            alt="search icon"
+            className="search-icon"
+          />
+        </div>
       </div>
     )
   }
