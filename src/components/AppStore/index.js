@@ -1,3 +1,6 @@
+import {Component} from 'react'
+import './index.css'
+
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
   {tabId: 'GAMES', displayText: 'Games'},
@@ -287,4 +290,14 @@ const appsList = [
   },
 ]
 
-// Write your code here
+class AppStore extends Component {
+  render() {
+    return (
+      <div>
+        <p>AppStore render Successfully</p>
+      </div>
+    )
+  }
+}
+
+export default AppStore
