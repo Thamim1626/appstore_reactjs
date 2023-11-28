@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
   background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+  scroll-behavior: smooth;
 }
 
 .main-heading {
@@ -51,7 +53,7 @@
 .tab-list {
   list-style: none;
   display: flex;
-  margin-left: 0px;
+  padding: 0px;
 }
 
 .tab-item {
@@ -75,7 +77,9 @@ tab and its functionality and its style*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 80wv;
+  padding-left: 0px;
+  padding: 8px;
+  max-width: 800px;
 }
 
 .app-item {

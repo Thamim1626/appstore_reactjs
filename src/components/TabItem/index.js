@@ -14,7 +14,7 @@ const TabItem = props => {
 
   return (
     <li className={listClass} onClick={tabOnClick}>
-      {displayText}
+      <button type="button"> {displayText}</button>
     </li>
   )
 }
