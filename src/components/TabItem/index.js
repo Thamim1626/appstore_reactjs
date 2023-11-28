@@ -20,8 +20,3 @@ const TabItem = props => {
 }
 
 export default TabItem
-
-//
-//           <li className="tab-item">thamim</li>
-//           <li className="tab-item">thamim</li>
-//           <li className="tab-item">thamim</li>
