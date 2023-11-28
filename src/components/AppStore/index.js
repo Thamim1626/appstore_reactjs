@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import TabItem from '../TabItem'
 import './index.css'
 
 const tabsList = [
@@ -291,7 +292,15 @@ const appsList = [
 ]
 
 class AppStore extends Component {
+  state = {activeTab: tabsList[0].tabId}
+
+  tabIdCall = tabId => {
+    this.setState({activeTab: tabId})
+  }
+
   render() {
+    const {activeTab} = this.state
+    console.log(activeTab)
     return (
       <div className="app-container">
         <h1 className="main-heading">APP STORE</h1>
@@ -303,6 +312,16 @@ class AppStore extends Component {
             className="search-icon"
           />
         </div>
+        <ul className="tab-list">
+          {tabsList.map(eachItem => (
+            <TabItem
+              eachItem={eachItem}
+              key={eachItem.tabId}
+              tabIdCall={this.tabIdCall}
+              isTabActive={activeTab === eachItem.tabId}
+            />
+          ))}
+        </ul>
       </div>
     )
   }

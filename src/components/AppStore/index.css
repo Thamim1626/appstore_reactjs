@@ -16,10 +16,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid grey;
+  border: 1px solid #7b8794;
   padding: 6px;
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
 .search-input {
@@ -32,10 +31,38 @@
 
 .search-input::placeholder {
   font-size: 18px;
+  color: #7b8794;
 }
 
 .search-icon {
   padding: 0px;
   height: 30px;
   width: 30px;
+}
+
+/*
+ above line styles are
+ main heading ,
+ input and its container
+ */
+
+/* now started the tab list styles*/
+
+.tab-list {
+  list-style: none;
+  display: flex;
+  margin-left: 0px;
+}
+
+.tab-item {
+  padding: 8px;
+  border-bottom: 3px solid #7b8794;
+  color: #7b8794;
+}
+
+.check {
+  border-bottom: 4px solid green;
+  padding: 6px;
+  color: green;
+  transition: ease-in-out;
 }
